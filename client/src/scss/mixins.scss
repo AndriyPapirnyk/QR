@@ -14,7 +14,7 @@
     height: $height;
     display: flex;
     justify-content: center;
-    background-color: rgb(233, 138, 64);
+    background-color: rgb(228, 148, 87);
     &__container{
         width: 1250px;
         height: 100%;
@@ -39,9 +39,8 @@
     cursor: pointer;
     transition: .5s;
     &:hover{
-        background-color: unset;
-        border: 1px solid #F5A006;
-        // color: #F5A006;
+        // border: 3px solid #333;
+        color: rgb(228, 148, 87);
         transition: .5s;
     }
 }
@@ -56,7 +55,15 @@
     cursor: pointer;
     padding: 0 10px;
     font-weight: 700;
+    transition: .5s;
     &::placeholder{
         color: #333;
+        transition: .5s;
+    }
+    &:hover{
+        transition: .5s;
+        &::placeholder{
+            color: rgb(228, 148, 87);
+        }
     }
 }
