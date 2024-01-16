@@ -1,0 +1,12 @@
+@import '../../scss/mixins.scss';
+
+.container__input {
+
+
+    @include input(100px)
+}
+
+.container__button {
+
+    @include button(40px)
+}

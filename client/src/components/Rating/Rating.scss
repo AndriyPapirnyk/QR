@@ -1,0 +1,10 @@
+@import '../../scss/mixins.scss';
+
+.rating__input {
+    @include input(100px)
+}
+
+.rating__button {
+
+    @include button(40px)
+}
