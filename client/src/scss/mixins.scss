@@ -14,7 +14,7 @@
     height: $height;
     display: flex;
     justify-content: center;
-    background-color: rgb(37, 35, 51);
+    background-color: rgb(233, 138, 64);
     &__container{
         width: 1250px;
         height: 100%;
@@ -31,9 +31,9 @@
 @mixin button($width) {
     width: $width;
     height: 60px;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #F5A006;
+    color: #333;
+    border-radius: 30px;
+    background-color: #fff;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
@@ -41,7 +41,7 @@
     &:hover{
         background-color: unset;
         border: 1px solid #F5A006;
-        color: #F5A006;
+        // color: #F5A006;
         transition: .5s;
     }
 }
@@ -49,14 +49,14 @@
 @mixin input($width) {
     width: $width;
     height: 60px;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #3F3D56;
+    color: #333;
+    border-radius: 30px;
+    background-color: #fff;
     font-size: 20px;
     cursor: pointer;
     padding: 0 10px;
     font-weight: 700;
     &::placeholder{
-        color: #fff;
+        color: #333;
     }
 }
