@@ -3,8 +3,7 @@
 
 # QR
 
-Dev team project for qr-code verification
-
+A group project that helps to verify the device by scanning a qr code and entering the results
 
 ## Tech Stack
 
@@ -36,9 +35,9 @@ Get main page:
   /
 ```
 
-Get results page:
+Get rating page:
 ```bash
-  /results
+  /rating
 ```
 
 ## API Reference
@@ -63,10 +62,6 @@ Get results page:
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
 
 ## Features
 
@@ -79,7 +74,8 @@ Takes two numbers and returns the sum.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://ibb.co/w0wtLSm)
+![App Screenshot](https://ibb.co/N6B4G7p)
 
 
 ## Authors
@@ -95,5 +91,5 @@ Takes two numbers and returns the sum.
 
 ## Feedback
 
-If you like our work, please add a star to this project :)
+If you like our work, please subscribe and add a star to this project :)
 
