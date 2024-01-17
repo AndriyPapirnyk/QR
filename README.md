@@ -59,7 +59,10 @@ Takes two numbers and returns the sum.
 
 ## Features
 
-- Comming soon...
+- user authorization by scanning a QR code
+- management of scan results by the unique ID of the device
+- scanning limit (1 time per day)
+- strict typing of data using TS
 
 
 
