@@ -29,6 +29,17 @@ server:
   npm start
 ```
 
+## Client Routing
+
+Get main page:
+```bash
+  /
+```
+
+Get results page:
+```bash
+  /results
+```
 
 ## API Reference
 
