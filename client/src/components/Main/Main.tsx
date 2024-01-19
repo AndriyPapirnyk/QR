@@ -4,7 +4,7 @@ import './Main.scss'
 const Main = () => {
     return (
         <div className='Main'>
-            <Container />
+            {/* <Container /> */}
             <Rating />
         </div>
     )
