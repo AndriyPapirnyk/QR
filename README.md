@@ -3,8 +3,7 @@
 
 # QR
 
-Dev team project for qr-code verification
-
+A group project that helps to verify the device by scanning a qr code and entering the results
 
 ## Tech Stack
 
@@ -29,6 +28,17 @@ server:
   npm start
 ```
 
+## Client Routing
+
+Get main page:
+```bash
+  /
+```
+
+Get rating page:
+```bash
+  /rating
+```
 
 ## API Reference
 
@@ -52,20 +62,20 @@ server:
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
 
 ## Features
 
-- Comming soon...
+- user authorization by scanning a QR code
+- management of scan results by the unique ID of the device
+- scanning limit (1 time per day)
+- strict typing of data using TS
 
 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://ibb.co/w0wtLSm)
+![App Screenshot](https://ibb.co/N6B4G7p)
 
 
 ## Authors
@@ -81,5 +91,5 @@ Takes two numbers and returns the sum.
 
 ## Feedback
 
-If you like our work, please add a star to this project :)
+If you like our work, please subscribe and add a star to this project :)
 
