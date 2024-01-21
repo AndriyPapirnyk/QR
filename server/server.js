@@ -4,6 +4,7 @@ const dotenv = require("dotenv").config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const PORT = 8000;
+const device = require('express-device');
 
 
 //
@@ -12,6 +13,7 @@ const url = 'mongodb+srv://DBproject:ePVJZ6n9U1RWahgN@qr.uduyoii.mongodb.net/?re
 
 const app = express();
 
+app.use(device.capture());
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
@@ -30,6 +32,13 @@ app.use((req, res, next) => {
       next();
   });
 });
+
+
+// app.get('/', (req, res) => {
+//   const userAgent = req.headers['user-agent'];
+//   const deviceType = req.device.type;
+//   res.send(`User-Agent: ${userAgent}\nDevice Type: ${deviceType}`);
+// });
 
 
 // mongodb
