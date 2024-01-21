@@ -1,0 +1,96 @@
+{
+  "name": "clientjs",
+  "version": "0.2.1",
+  "homepage": "https://clientjs.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackspirou/clientjs.git"
+  },
+  "description": "Device information and digital fingerprinting written in pure JavaScript.",
+  "keywords": [
+    "browser",
+    "fingerprint",
+    "client",
+    "info",
+    "pure",
+    "javascript"
+  ],
+  "author": "Jack Spirou <jack@spirou.io> (http://twitter.com/jack_spirou)",
+  "contributors": [
+    {
+      "name": "Jack Spirou",
+      "url": "http://twitter.com/jack_spirou",
+      "email": "jack@spirou.io"
+    },
+    {
+      "name": "Daniel Montoya",
+      "url": "http://twitter.com/dsmontoya",
+      "email": "dsmontoyam@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/jackspirou/clientjs/issues"
+  },
+  "scripts": {
+    "build": "webpack -c webpack.config.js",
+    "checks": "npm run lint && npm test && npm run build",
+    "lint": "eslint --fix '**/*.js'",
+    "lint:check": "eslint '**/*.js'",
+    "postinstall": "node scripts/install.js",
+    "posttest": "npm run test:aircover",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run checks",
+    "preversion": "npm run checks",
+    "test": "npm run test:local",
+    "test:local": "karma start karma/local.conf.js",
+    "test:aircover": "karma start karma/aircover.conf.js",
+    "test:drone": "karma start karma/drone.conf.js"
+  },
+  "main": "src/client.js",
+  "browser": "dist/client.base.min.js",
+  "files": [
+    "dist/**/*",
+    "logo.jpg",
+    "scripts/**/*",
+    "src/**/*",
+    "!.eslintrc.js"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@release-it/bumper": "^3.0.1",
+    "@release-it/keep-a-changelog": "^2.3.0",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.4",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "jasmine-core": "^3.10.1",
+    "karma": "^6.3.5",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-firefox-launcher": "^2.1.1",
+    "karma-jasmine": "^4.0.1",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^4.3.6",
+    "karma-sourcemap-loader": "^0.3.8",
+    "karma-webpack": "^4.0.2",
+    "lint-staged": "11.2.3",
+    "release-it": "^14.11.6",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "globalthis": "^1.0.2",
+    "inherits": "^2.0.4",
+    "murmurhash-js": "^1.0.0",
+    "ua-parser-js": "^0.7.30"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

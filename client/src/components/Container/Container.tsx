@@ -1,12 +1,14 @@
+
 import './Container.scss';
+
 
 import image from './Image/QRCode.png'
 const Container = () => {
     return (
         <div className='container'>
             <div className='container__first-block'>
-                <div className="container__first-block_image">
-                    <img src={image} alt="" />
+                <div className="container__first-block_image" >
+                    <img src={image} alt="QR Code" />
                 </div>
 
             </div>
