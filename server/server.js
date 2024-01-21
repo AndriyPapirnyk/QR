@@ -4,6 +4,7 @@ const dotenv = require("dotenv").config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const PORT = 8000;
+var device = require('express-device');
 
 //
 
@@ -35,6 +36,10 @@ const serverRoutes = require('./routes/routes')
 app.use('/api/user', serverRoutes);
 
 //
+
+app.post('/scan', (req, res) => {
+ console.log('scanned')
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
