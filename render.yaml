@@ -1,0 +1,16 @@
+services:
+  - name: qr-server
+    type: web
+    buildCommand: npm install
+    startCommand: npm start
+
+  - name: qr-client
+    type: static
+    buildCommand: npm install
+    startCommand: npm run dev
+
+routes:
+  - path: /api
+    service: qr-server
+  - path: /*
+    service: qr-client
