@@ -4,7 +4,7 @@ const dotenv = require("dotenv").config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const PORT = 8000;
-var device = require('express-device');
+
 
 //
 
